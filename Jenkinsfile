@@ -16,13 +16,13 @@ pipeline {
             }
         }
         
-        stage ('test') {
+        /*stage ('test') {
             steps {
                 withMaven(jdk: 'localJDK', maven: 'localmaven') {
                     sh 'mvn test'
                 }
             }
-        }
+        }*/
         
         stage ('build') {
             steps {
